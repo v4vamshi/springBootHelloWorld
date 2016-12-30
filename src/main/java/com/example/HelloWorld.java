@@ -19,7 +19,7 @@ public class HelloWorld {
 	 */
 	@RequestMapping("/")
 	public String home() {
-		return "Hello World";
+		return "Hello World- Testing Vamshi - Commit to master";
 	}
 
 	/**
