@@ -1,8 +1,9 @@
-package com.example;
+package com.learn.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -17,17 +18,9 @@ public class HelloWorld {
 	 * 
 	 * @return
 	 */
-	@RequestMapping("/")
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home() {
-		return "Hello World- Testing Vamshi - Commit to master";
-	}
-
-	/**
-	 * 
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		SpringApplication.run(HelloWorld.class, args);
+		return "home";
 	}
 
 }
