@@ -17,7 +17,7 @@ public class HelloWorld {
 	 * 
 	 * @return
 	 */
-	@RequestMapping("/")
+	@RequestMapping("//")
 	public String home() {
 		return "Hello World";
 	}
@@ -29,5 +29,4 @@ public class HelloWorld {
 	public static void main(String[] args) {
 		SpringApplication.run(HelloWorld.class, args);
 	}
-
 }
