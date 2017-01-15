@@ -17,7 +17,7 @@ public class HelloWorld {
 	 * 
 	 * @return
 	 */
-	@RequestMapping("//")
+	@RequestMapping("/")
 	public String home() {
 		return "Hello World";
 	}
